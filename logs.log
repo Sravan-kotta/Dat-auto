@@ -6,3 +6,29 @@
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2024-05-02 16:50:41,867:WARNING:
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 11:33:45,788:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 11:33:45,788:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 11:33:45,788:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 11:33:45,788:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 11:37:26,503:WARNING:C:\Users\srava\AppData\Local\Programs\Python\Python311\Lib\site-packages\ydata_profiling\model\typeset.py:208: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  is_valid_dtype = pdt.is_categorical_dtype(series) and not pdt.is_bool_dtype(
+
+2024-05-29 11:37:26,504:WARNING:C:\Users\srava\AppData\Local\Programs\Python\Python311\Lib\site-packages\ydata_profiling\model\typeset.py:125: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  not pdt.is_categorical_dtype(series)
+
+2024-05-29 11:37:26,515:WARNING:C:\Users\srava\AppData\Local\Programs\Python\Python311\Lib\site-packages\ydata_profiling\model\typeset.py:208: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  is_valid_dtype = pdt.is_categorical_dtype(series) and not pdt.is_bool_dtype(
+
+2024-05-29 11:37:26,516:WARNING:C:\Users\srava\AppData\Local\Programs\Python\Python311\Lib\site-packages\ydata_profiling\model\typeset.py:125: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  not pdt.is_categorical_dtype(series)
+
+2024-05-29 11:37:26,518:WARNING:C:\Users\srava\AppData\Local\Programs\Python\Python311\Lib\site-packages\ydata_profiling\model\typeset.py:208: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  is_valid_dtype = pdt.is_categorical_dtype(series) and not pdt.is_bool_dtype(
+
+2024-05-29 11:37:26,518:WARNING:C:\Users\srava\AppData\Local\Programs\Python\Python311\Lib\site-packages\ydata_profiling\model\typeset.py:125: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  not pdt.is_categorical_dtype(series)
+
