@@ -9,7 +9,7 @@ from pandas.api.types import is_numeric_dtype
 with st.sidebar: 
     st.image("https://www.onepointltd.com/wp-content/uploads/2020/03/inno2.png")
     st.title("AutoML")
-    choice = st.radio("Navigation", ["Upload Your Dataset", "Exploratory Data Analysis", "Machine Learning", "Download Trained Model"])
+    choice = st.radio("Navigation", ["Upload Your Dataset", "Exploratory Data Analysis", "Data Preprocessing", "Machine Learning", "Download Trained Model"])
     st.info("This project application helps you to Automate Machine Learning and Data Analysis ")
 
 if os.path.exists("sourcedata.csv"):
@@ -28,6 +28,27 @@ if choice == "Exploratory Data Analysis":
     profile_report = ProfileReport(df)
     st_profile_report(profile_report)
 
+if choice == "Data Preprocessing":
+    st.title("Data Preprocessing")
+    target = st.selectbox("Select Your Target", df.columns)
+    exec(open(r"C:\Users\srava\Desktop\DATAUTO\Dat-auto\process.py").read())
+    choice = st.radio(r"$\textsf{\Large Navigation}$",["Getting started", "Outlier removal"])#, "Exploratory Data Analysis", "Data Preprocessing", "Machine Learning", "Download Trained Model"])
+    if choice == "Getting started":
+        label = r'''$\textsf{ \scriptsize Visualizing hyperparameter selection }$'''
+        st.title(label)
+        st.write("Dont forget to select target :smile:")
+    if choice == "Outlier removal":  
+        pca = preprocess_pca(df, target)
+        st.title(r"$\textbf{ \scriptsize Using Isolation Forest}$")
+        w = st.slider(r"$\textsf{\Large Enter contamination}$",0.01,0.5,0.01)
+        isolation_forest_visual(pca,w)
+            
+    
+
+    
+    
+
+
 if choice == "Machine Learning":
     st.title("All Machine Learning Models")
     target = st.selectbox("Select Your Target", df.columns)
@@ -38,7 +59,7 @@ if choice == "Machine Learning":
     else:
         if st.button("Train Model"):
             try:
-                setup(df, target=target)
+                setup(df, target=target,fix_imbalance = True)
                 setup_df = pull()
                 st.info("This is the ML Experiment settings")
                 st.dataframe(setup_df)
